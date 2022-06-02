@@ -1,0 +1,71 @@
+.expenses {
+  max-width: 120rem;
+  min-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: #ecf0f1;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+}
+
+.expenses-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  align-items: center;
+  user-select: none;
+  padding: 1rem 3rem;
+  margin: 1rem 2rem 3rem 2rem;
+  overflow: hidden;
+  background-color: #feca57;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.212);
+
+  &__date {
+    color: #222f3e;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 12rem;
+    height: 8rem;
+
+    &--day {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #e74c3c;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__amount {
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: #222f3e;
+    padding: 1rem 3rem;
+    min-width: 12rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__empty {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+}
